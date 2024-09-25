@@ -5,6 +5,8 @@ const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 4000;
 
+// ** cookie-parser middleware and why do we need this ? **
+
 app.use(express.json()); // for parsing json body
 require("./config/database").connect();
 
